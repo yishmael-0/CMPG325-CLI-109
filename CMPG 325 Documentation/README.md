@@ -1,4 +1,4 @@
-# CMPG325 — Network Design & Implementation Portfolio
+# CMPG325 : Network Design & Implementation Portfolio
 
 **Student:** Yishmael
 **Client:** Lesedi Renewable Energy Research Group (Mahikeng)
@@ -21,7 +21,7 @@ All work here is my own, produced specifically for the CLI-109 scenario.
 Lesedi Renewable Energy Research Group is a research organisation that needs
 a segmented internal network (research staff, administration, servers/lab
 equipment), inter-VLAN routing via Router-on-a-Stick, and **limited** wireless
-access for after-hours cleaning/security contractors — all within a
+access for after-hours cleaning/security contractors and all within a
 heritage-listed building where no new cabling may be run through external
 walls.
 
@@ -33,7 +33,7 @@ walls.
 
 Router-on-a-Stick edge router, core switch, two access switches (Research
 wing and Admin office), server room devices, and one indoor wireless AP
-serving the restricted guest VLAN — connected via existing internal cabling
+serving the restricted guest VLAN, connected via existing internal cabling
 to respect the heritage building constraint.
 
 ### Logical topology
@@ -68,7 +68,7 @@ Five VLANs routed through one physical trunk link via router sub-interfaces
 
 ## Design summary (Milestone 1)
 
-- **VLANs:** 10 (Research), 20 (Admin), 30 (Servers), 40 (Guest Wi-Fi —
+- **VLANs:** 10 (Research), 20 (Admin), 30 (Servers), 40 (Guest Wi-Fi,
   restricted, after-hours contractors), 99 (Management).
 - **Routing:** single router, one physical trunk to the core switch, one
   802.1Q sub-interface per VLAN (Router-on-a-Stick).
