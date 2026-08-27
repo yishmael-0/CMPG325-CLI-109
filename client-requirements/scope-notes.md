@@ -1,7 +1,7 @@
-# Scope Notes — CLI-109
+# Scope Notes : CLI-109
 
 The client change request is worded specifically as **"limited wireless
-access"** for after-hours contractors — not general guest Wi-Fi, not staff
+access"** for after-hours contractors, not general guest Wi-Fi, not staff
 mobility, and not a public hotspot. The design is deliberately scoped to
 that wording, per the brief's instruction not to introduce additional scope
 unnecessarily.
