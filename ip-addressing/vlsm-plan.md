@@ -1,4 +1,4 @@
-# IP Addressing Plan — CLI-109
+# IP Addressing Plan : CLI-109
 
 Assigned block: **172.30.74.0/23** (172.30.74.0 – 172.30.75.255, 512 addresses)
 
@@ -30,10 +30,10 @@ whole block immediately.
 ## Sizing rationale
 
 - VLAN 10 (Research) is sized largest (/25, 126 hosts) as the primary
-  functional group — researcher workstations and lab/data-collection PCs.
+  functional group, researcher workstations and lab/data-collection PCs.
 - VLAN 20 (Admin) uses a /26 (62 hosts), adequate for administrative staff
   with headroom.
-- VLAN 30 (Servers) and VLAN 40 (Guest Wi-Fi) each use a /27 (30 hosts) —
+- VLAN 30 (Servers) and VLAN 40 (Guest Wi-Fi) each use a /27 (30 hosts),
   small, well-defined populations.
 - VLAN 99 (Management) uses a /28 (14 hosts) — infrastructure only, no
   end-user devices.
