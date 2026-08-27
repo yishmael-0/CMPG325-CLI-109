@@ -1,4 +1,4 @@
-# Subnetting Workings — VLSM derivation from 172.30.74.0/23
+# Subnetting Workings : VLSM derivation from 172.30.74.0/23
 
 Shows the actual working, not just the final table, in case this needs to
 be explained or defended.
@@ -14,7 +14,7 @@ VLSM approach: allocate largest-need subnets first, carving down from the
 top of the range, so each subnet's boundary aligns correctly on a power-of-2
 address block.
 
-## Step 1 — VLAN 10 (Research), needs ~126 usable hosts
+## Step 1 : VLAN 10 (Research), needs ~126 usable hosts
 
 Nearest power of 2 ≥ 126 usable hosts → borrow so that 2^h − 2 ≥ 126 →
 h = 7 (2^7 − 2 = 126 usable). That's a `/25` (32 − 7 = 25).
@@ -26,7 +26,7 @@ h = 7 (2^7 − 2 = 126 usable). That's a `/25` (32 − 7 = 25).
 
 Remaining space starts at `172.30.74.128`.
 
-## Step 2 — VLAN 20 (Admin), needs ~62 usable hosts
+## Step 2 : VLAN 20 (Admin), needs ~62 usable hosts
 
 2^6 − 2 = 62 usable → `/26` (32 − 6 = 26).
 
@@ -37,7 +37,7 @@ Remaining space starts at `172.30.74.128`.
 
 Remaining space starts at `172.30.74.192`.
 
-## Step 3 — VLAN 30 (Servers), needs ~30 usable hosts
+## Step 3 : VLAN 30 (Servers), needs ~30 usable hosts
 
 2^5 − 2 = 30 usable → `/27` (32 − 5 = 27).
 
@@ -48,7 +48,7 @@ Remaining space starts at `172.30.74.192`.
 
 Remaining space starts at `172.30.74.224`.
 
-## Step 4 — VLAN 40 (Guest Wi-Fi), needs ~30 usable hosts
+## Step 4 : VLAN 40 (Guest Wi-Fi), needs ~30 usable hosts
 
 Same size as Step 3 → `/27`.
 
@@ -60,7 +60,7 @@ Same size as Step 3 → `/27`.
 This exactly fills the first half of the /23 block (`172.30.74.0/24`).
 Remaining space starts at `172.30.75.0`.
 
-## Step 5 — VLAN 99 (Management), needs ~10-14 usable hosts (infra only)
+## Step 5 : VLAN 99 (Management), needs ~10-14 usable hosts (infra only)
 
 2^4 − 2 = 14 usable → `/28` (32 − 4 = 28).
 
@@ -72,7 +72,7 @@ Remaining space starts at `172.30.75.0`.
 ## Remaining space
 
 `172.30.75.16` through `172.30.75.255` (240 addresses) is left
-unallocated — reserved for future departments, additional lab equipment,
+unallocated, reserved for future departments, additional lab equipment,
 or expansion, without needing to renumber any existing VLAN.
 
 ## Check — no overlaps, everything inside the assigned block
