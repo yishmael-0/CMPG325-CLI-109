@@ -35,7 +35,7 @@ whole block immediately.
   with headroom.
 - VLAN 30 (Servers) and VLAN 40 (Guest Wi-Fi) each use a /27 (30 hosts),
   small, well-defined populations.
-- VLAN 99 (Management) uses a /28 (14 hosts) — infrastructure only, no
+- VLAN 99 (Management) uses a /28 (14 hosts), infrastructure only, no
   end-user devices.
 - Roughly half the /23 block (172.30.75.16 onward) is left unallocated for
   future departments, additional lab equipment, or a wired guest option,
