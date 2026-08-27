@@ -1,6 +1,6 @@
 # CMPG325 — Network Design & Implementation Portfolio
 
-**Student:** Yishmael
+**Student:** Lesego I. Phiri - 36151262
 **Client:** Lesedi Renewable Energy Research Group (Mahikeng)
 **Client ID:** CLI-109
 **Project ID:** CMPG325-2026-109
