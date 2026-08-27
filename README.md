@@ -1,4 +1,4 @@
-# CMPG325 — Network Design & Implementation Portfolio
+# CMPG325 : Network Design & Implementation Portfolio
 
 **Student:** Lesego I. Phiri - 36151262
 **Client:** Lesedi Renewable Energy Research Group (Mahikeng)
