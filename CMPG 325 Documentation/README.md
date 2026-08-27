@@ -38,7 +38,7 @@ to respect the heritage building constraint.
 
 ### Logical topology
 
-![Logical topology](design/logical_topology.png)
+![Logical topology](logical_topology.png)
 
 Five VLANs routed through one physical trunk link via router sub-interfaces
 (802.1Q), each acting as the default gateway for its VLAN.
