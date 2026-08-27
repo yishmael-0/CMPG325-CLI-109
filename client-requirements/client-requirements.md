@@ -6,7 +6,7 @@ beyond what the brief specifies.
 
 | Ref | Requirement | Source / Justification |
 |---|---|---|
-| R1 | Network must use the assigned address block 172.30.74.0/23 for all internal addressing. | Assignment brief — fixed allocation for CLI-109. |
+| R1 | Network must use the assigned address block 172.30.74.0/23 for all internal addressing. | Assignment brief, fixed allocation for CLI-109. |
 | R2 | Traffic must be logically segmented by function (research staff, administration, servers/lab equipment) to contain broadcast domains and separate research data from general office traffic. | Inferred from client being a research organisation with distinct staff and lab/server functions; standard practice for a research network handling project data. |
 | R3 | Inter-VLAN communication must be routed through a single router using sub-interfaces (Router-on-a-Stick), one sub-interface per VLAN on an 802.1Q trunk. | Assigned technical challenge, mandatory, intermediate difficulty. |
 | R4 | After-hours cleaning and security contractors require wireless network access, but that access must be limited (not full access to research/admin/server resources). | Client change request — explicit wording: "limited wireless access", so scope is restricted to what this phrase requires. |
