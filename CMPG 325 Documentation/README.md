@@ -29,7 +29,7 @@ walls.
 
 ### Physical topology
 
-![Physical topology](02-design/physical-topology.png)
+![Physical topology](design/physical-topology.png)
 
 Router-on-a-Stick edge router, core switch, two access switches (Research
 wing and Admin office), server room devices, and one indoor wireless AP
@@ -38,7 +38,7 @@ to respect the heritage building constraint.
 
 ### Logical topology
 
-![Logical topology](02-design/logical-topology.png)
+![Logical topology](design/logical_topology.png)
 
 Five VLANs routed through one physical trunk link via router sub-interfaces
 (802.1Q), each acting as the default gateway for its VLAN.
