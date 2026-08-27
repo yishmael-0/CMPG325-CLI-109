@@ -29,7 +29,7 @@ walls.
 
 ### Physical topology
 
-![Physical topology](design/physical-topology.png)
+![Physical topology](physical-topology.png)
 
 Router-on-a-Stick edge router, core switch, two access switches (Research
 wing and Admin office), server room devices, and one indoor wireless AP
