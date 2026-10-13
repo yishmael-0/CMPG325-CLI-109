@@ -13,7 +13,7 @@ referenced below.
 | Server-App | 30 | 172.30.74.193 | 4/4 replies, 0% loss, TTL=255 | `03-serverapp-gateway.png` |
 | Laptop-Contractor (wireless) | 40 | 172.30.74.225 | 4/4 replies, 0% loss | `05-before-acl-contractor-and-vlan30.png` |
 
-Confirms every VLAN's end devices can reach their own default gateway —
+Confirms every VLAN's end devices can reach their own default gateway -
 basic Layer 2/3 connectivity within each VLAN is working. (PC-Research1 and
 Server-File were configured identically to their VLAN partners above and
 were not separately screenshotted, since PC-Research2 and Server-App
@@ -22,7 +22,7 @@ already demonstrate connectivity for VLANs 10 and 30 respectively.)
 Wireless association evidence (Laptop-Contractor connected to SSID
 `Lesedi-Guest`): `04-contractor-wireless-connected.png`
 
-## 2. Inter-VLAN routing — Router-on-a-Stick proof
+## 2. Inter-VLAN routing - Router-on-a-Stick proof
 
 PC-Admin1 (VLAN 20) pinged Server-File (VLAN 30, 172.30.74.194):
 
@@ -30,16 +30,16 @@ PC-Admin1 (VLAN 20) pinged Server-File (VLAN 30, 172.30.74.194):
 - Significance: TTL dropped from the usual 255 (Cisco default, seen in all
   same-VLAN tests above) to 127 (Windows/PC default of 128, minus one
   router hop). This is direct evidence the packet was routed through
-  Router-Lesedi — proof of real inter-VLAN routing, not simple switching.
+  Router-Lesedi - proof of real inter-VLAN routing, not simple switching.
 - Screenshot: `01-admin1-gateway-and-vlan30-ttl127.png` (same screenshot as
   the PC-Admin1 gateway test above — both pings are visible in the same
   Command Prompt window)
 
-## 3. Restricted VLAN 40 — before and after the ACL
+## 3. Restricted VLAN 40 - before and after the ACL
 
 **Before** ACL 140 was applied:
 - Laptop-Contractor (VLAN 40) → gateway (172.30.74.225) and → Server-File
-  (172.30.74.194): both succeeded, the Server-File ping showing TTL=127 —
+  (172.30.74.194): both succeeded, the Server-File ping showing TTL=127 -                                      
   fully open, as expected prior to restriction.
 - Screenshot: `05-before-acl-contractor-and-vlan30.png`
 
@@ -51,7 +51,7 @@ PC-Admin1 (VLAN 20) pinged Server-File (VLAN 30, 172.30.74.194):
 
 **Permitted Internet access** (proves restriction is selective, not total):
 - Laptop-Contractor → Server-Internet (203.0.113.2).
-- Screenshot: `10-contractor-internet-permitted.png` (if captured — see note below)
+- Screenshot: `10-contractor-internet-permitted.png` (if captured - see note below)
 
 ## 4. ACL match counters
 
@@ -73,7 +73,7 @@ PC-Admin1 (VLAN 20) pinged Server-File (VLAN 30, 172.30.74.194):
 
 | Requirement | Evidence |
 |---|---|
-| R2 — segmentation | VLANs verified via `show vlan brief` (see `switch-configuration.md`) |
-| R3 — Router-on-a-Stick | Section 2 above (TTL=127 proof) |
+| R2 - segmentation | VLANs verified via `show vlan brief` (see `switch-configuration.md`) |
+| R3 - Router-on-a-Stick | Section 2 above (TTL=127 proof) |
 | R4 — limited contractor access | Section 3 above (denied internally, permitted to Internet) |
 | R7 — end-to-end connectivity demonstrated | Sections 1–3 above |
