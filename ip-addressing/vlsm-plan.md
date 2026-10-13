@@ -1,6 +1,6 @@
 # IP Addressing Plan : CLI-109
 
-Assigned block: **172.30.74.0/23** (172.30.74.0 – 172.30.75.255, 512 addresses)
+Assigned block: **172.30.74.0/23** (172.30.74.0 - 172.30.75.255, 512 addresses)
 
 Subdivided using VLSM so each VLAN gets a subnet sized to its expected host
 count, with spare space kept for future growth rather than allocating the
