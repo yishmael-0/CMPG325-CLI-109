@@ -19,7 +19,7 @@ across the three switches.
 ## SwitchB-Admin
 
 - VLAN 20 access port - PC-Admin1 (confirmed on Fa1/1 via `show vlan brief`)
-- VLANs 10, 30, 40, 99 correctly show no ports on this switch — none of
+- VLANs 10, 30, 40, 99 correctly show no ports on this switch - none of
   those end devices are physically connected here
 - Trunk link up to Core-Switch
 
