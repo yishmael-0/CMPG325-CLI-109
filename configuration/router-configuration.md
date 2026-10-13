@@ -1,4 +1,4 @@
-# Router Configuration — Router-Lesedi (Milestone 2)
+# Router Configuration - Router-Lesedi (Milestone 2)
 
 Router-on-a-Stick implementation of the assigned technical challenge (R3):
 one 802.1Q sub-interface per VLAN on FastEthernet0/0, each acting as that
