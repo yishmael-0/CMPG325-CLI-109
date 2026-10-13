@@ -75,7 +75,7 @@ Remaining space starts at `172.30.75.0`.
 unallocated, reserved for future departments, additional lab equipment,
 or expansion, without needing to renumber any existing VLAN.
 
-## Check — no overlaps, everything inside the assigned block
+## Check : no overlaps, everything inside the assigned block
 
 | Subnet | Falls within 172.30.74.0/23? |
 |---|---|
