@@ -48,15 +48,15 @@ Five VLANs routed through one physical trunk link via router sub-interfaces
 | Folder | Contents |
 |---|---|
 | `CMPG 325 Documentation/` | Milestone submissions for the whole project (Milestone 1, 2, 3, final) |
-| `01-requirements/` | Client requirements traceability |
-| `02-design/` (currently: images live directly in `CMPG 325 Documentation/`) | Physical and logical topology diagrams, design rationale |
-| `03-ip-addressing/` | VLSM IP addressing plan and subnetting workings |
-| `04-packet-tracer/` | `.pkt` file(s), versioned as the build progresses |
-| `05-configuration/` | Exported device configs (router sub-interfaces, switch VLAN/trunk, AP) |
-| `06-testing/` | Connectivity and Router-on-a-Stick verification evidence |
-| `07-screenshots/` | Topology and simulation-mode screenshots |
-| `08-troubleshooting/` | Issues encountered and how they were resolved |
-| `09-reflection/` | Final reflection on the design and challenge |
+| `requirements/` | Client requirements traceability |
+| `design/` (currently: images live directly in `CMPG 325 Documentation/`) | Physical and logical topology diagrams, design rationale |
+| `ip-addressing/` | VLSM IP addressing plan and subnetting workings |
+| `packet-tracer/` | `.pkt` file(s), versioned as the build progresses |
+| `configuration/` | Exported device configs (router sub-interfaces, switch VLAN/trunk, AP) |
+| `testing/` | Connectivity and Router-on-a-Stick verification evidence |
+| `screenshots/` | Topology and simulation-mode screenshots |
+| `troubleshooting/` | Issues encountered and how they were resolved |
+| `reflection/` | Final reflection on the design and challenge |
 
 ## Milestone log
 
