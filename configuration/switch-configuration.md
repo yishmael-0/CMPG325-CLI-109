@@ -1,4 +1,4 @@
-# Switch Configuration (Milestone 2)
+# Switch Configuration (Milestone 2) 
 
 Implements the VLAN/trunk/access plan from `../02-design/design-rationale.md`
 across the three switches.
